@@ -9,10 +9,17 @@ jest.mock("axios");
 const mockedAxios = axios as jest.Mocked<typeof axios>;
 
 describe("weather service", () => {
+  let consoleErrorSpy: jest.SpyInstance;
+
   beforeEach(() => {
     clearWeatherCache();
     jest.clearAllMocks();
     jest.useRealTimers();
+    consoleErrorSpy = jest.spyOn(console, "error").mockImplementation(() => {});
+  });
+
+  afterEach(() => {
+    consoleErrorSpy.mockRestore();
   });
 
   it("returns simplified weather data on success", async () => {

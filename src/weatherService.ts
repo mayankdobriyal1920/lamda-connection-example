@@ -24,7 +24,7 @@ export class WeatherService {
 
   private buildUrl(city: string): string {
     const encoded = encodeURIComponent(city);
-    return `https://api.openweathermap.org/data/2.5/weather?q=${encoded}&appid=mock_key`;
+    return `https://api.openweathermap.org/data/2.5/weather?q=${encoded}&appid=82f661980014b5dbe9cc60e5995e7eab`;
   }
 
   private buildErrorMessage(error: unknown): string {
