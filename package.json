@@ -1,0 +1,22 @@
+{
+  "name": "lamda-connection-example",
+  "version": "1.0.0",
+  "description": "Example TypeScript AWS Lambda-style functions with validation, weather API integration, retries, and tests",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.1.0",
+    "axios": "^1.13.4",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5.9.3"
+  }
+}

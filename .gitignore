@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# builds & compiled output
+dist/
+*.tsbuildinfo
+
+# testing
+coverage/
+.jest-cache/
+.jest/
+
+# environment / secrets
+.env
+.env.local
+
+# editor / system
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
